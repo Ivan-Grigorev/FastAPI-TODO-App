@@ -29,4 +29,4 @@ class ToDoResponse(ToDoBase):
     id: int  # unique ID of the to-do
 
     class Config:
-        orm_mode = True  # enable ORM mode for data conversion
+        from_attributes = True  # enable ORM mode for data conversion
